@@ -1,0 +1,8 @@
+node_modules
+lib
+dist
+coverage
+ExperimentCourse11/lib/**
+ExperimentCourse11/endtoend/*/build
+examples/svelte-example/public/build/
+bundle-legacy.js
