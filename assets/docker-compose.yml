@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  ExperimentCourse11:
+    image: transloadit/companion
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /app/node_modules
+      - /mnt/ExperimentCourse11-server-data:/mnt/ExperimentCourse11-server-data
+    ports:
+      - '3020:3020'
+    env_file:
+      - .env
